@@ -1,0 +1,167 @@
+ 
+ 
+
+
+h1 {
+  color: #1f2022;
+   font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+  font-size: 1200%;
+    letter-spacing: -12px;
+    z-index: -2;
+    
+
+    animation-name: Title_anim;
+  animation-duration: 3200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;  
+  animation-delay: 1750ms;
+
+}
+h2 {
+    margin-left: 10%;
+    
+  color: dimgray;
+   font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+  font-size: 400%;
+    letter-spacing: -3px;
+    z-index: -2;
+    
+
+   animation-name: WordComeUp_anim;
+      animation-duration: 4250ms;
+    z-index: 2;
+    
+
+        text-align: center;
+    width:20%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    border: 10px;
+    border-style: double;
+    border-color: dimgray;
+
+    animation-timing-function:ease-in-out;  
+
+}
+p1  {
+  color: dimgray;
+  font-family: courier;
+   right: 200px;
+  font-size: 160%;
+     animation-name: WordComeUp_anim;
+      animation-duration: 4250ms;
+    z-index: 2;
+
+    animation-timing-function:ease-in-out;  
+}
+p  {
+  color: dimgray;
+  font-family: courier;
+    padding-left: 20px;
+  font-size: 200%;
+     animation-name: WordComeUp_anim;
+      animation-duration: 4250ms;
+    z-index: 2;
+
+    animation-timing-function:ease-in-out;  
+}
+
+.textDiv{
+    padding-top: 180px;
+  
+}
+.important{
+    font-weight: bold;
+}
+
+
+
+.date{
+    font-weight: bold;
+    word-spacing: 20px;
+    font-size: 300%;
+}
+body {
+background:#1f2022; 
+ animation-name: Background_anim;
+  animation-duration: 1500ms;
+  
+}
+.kiekje{transition: 3s ease;display:inline-block; }
+.photobubble{align-items: center;}
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.rightbox{
+    top:-80px;
+        right:5%;
+    position:fixed;
+    text-align: right;
+    display:flex;
+     z-index: -2;
+   
+     
+    
+}
+
+
+    @media only screen and (max-width: 1000px) {
+        h1{
+            display:flex;
+            position:static;
+        }
+        h2{
+          font-size: 800%;  
+            width: 60%
+               
+        }
+p{
+       
+        font-size: 340%;
+    }
+  
+        }
+}
+   
+
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    
+}
+@keyframes WordComeUp_anim{
+    0% {opacity: 0%;}
+    
+    80% {opacity: 0%;}
+    100%{opacity:100%;}
+}
+@keyframes Title_anim {
+  0%   {color:#1f2022;}
+  6%  {color:#444444;}
+30%  {color:#1f2022;}
+    34%  {color: #666666; }
+    58%  {color:#1f2022; }
+    62%  {color:#444444; }
+        86%  {color:#1f2022; }
+        100%  {color:#1f2022; }
+}
+@keyframes Background_anim {
+ 0%   {background-color:#1f2022; 
+    }
+     60%   {color:#1f2022; 
+    }
+75%  {background-color:#444444; }
+  100% {background-color:#1f2022; }
+
+
+}
