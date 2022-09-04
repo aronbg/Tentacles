@@ -1,6 +1,21 @@
  
  
+  #div{
+   background : url('https://studenthome.hku.nl/~aron.bockting/projects/CarWash/PngTentacleV5.png') no-repeat;
+   background-size : cover;
+      
+      max-height: 100%;
+   min-height : 792px;
+      left: 10%
+          
+    max-width: 80%;
+   min-width: 619px;
+      z-index: -2;
+      height: 100%
+      position: inherit;
 
+      
+  }
 
 h1 {
   color: #1f2022;
@@ -8,7 +23,8 @@ h1 {
     font-weight: bold;
   font-size: 1200%;
     letter-spacing: -12px;
-    z-index: -2;
+    z-index: -1;
+    
     
 
     animation-name: Title_anim;
@@ -22,11 +38,11 @@ h2 {
     margin-left: 10%;
     
   color: dimgray;
-   font-family: 'Russo One', sans-serif;
+   font-family: 'Russo   One', sans-serif;
     font-weight: bold;
   font-size: 400%;
     letter-spacing: -3px;
-    z-index: -2;
+    z-index: 0;
     
 
    animation-name: WordComeUp_anim;
@@ -50,6 +66,7 @@ p1  {
   color: dimgray;
   font-family: courier;
    right: 200px;
+    
   font-size: 160%;
      animation-name: WordComeUp_anim;
       animation-duration: 4250ms;
@@ -60,7 +77,7 @@ p1  {
 p  {
   color: dimgray;
   font-family: courier;
-    padding-left: 20px;
+    margin-left: 20px;
   font-size: 200%;
      animation-name: WordComeUp_anim;
       animation-duration: 4250ms;
@@ -72,6 +89,10 @@ p  {
 .textDiv{
     padding-top: 180px;
   
+}
+.smallicon{
+    margin:3%;
+ 
 }
 .important{
     font-weight: bold;
@@ -85,7 +106,10 @@ p  {
     font-size: 300%;
 }
 body {
-background:#1f2022; 
+background:#1f2022;
+    padding: none;
+    margin: none;
+          z-index: -2;
  animation-name: Background_anim;
   animation-duration: 1500ms;
   
@@ -124,6 +148,13 @@ p{
        
         font-size: 340%;
     }
+        p1{
+       
+        font-size: 200%;
+    }
+        #div{
+            max-width: 100%;
+        }
   
         }
 }
