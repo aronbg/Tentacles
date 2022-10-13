@@ -17,22 +17,47 @@
       
   }
 
+.ImageButton {
+    max-width: 100%;
+    border-radius: 25%;
+    transition: transform .2s;
+}
+
+    .ImageButton:hover {
+        transform: scale(1.1);
+    }
+
+.formbox {
+    padding-top: 200px;
+    display: flex;
+    color: white;
+    font-size: 32px;
+}
+
+input[type="text"]{
+    background-color:gray;
+    width:200px;
+    height:200px;
+}
+
+input[type="submit"]{
+    background-color: gray;
+}
+
 h1 {
-  color: #1f2022;
-   font-family: 'Russo One', sans-serif;
+    color: #1f2022;
+    font-family: 'Russo One', sans-serif;
     font-weight: bold;
-  font-size: 1200%;
+    font-size: 1200%;
     letter-spacing: -12px;
     z-index: -1;
-    
-    
-
+    margin: 0px;
+    margin-top: 64px;
     animation-name: Title_anim;
-  animation-duration: 3200ms;
+    animation-duration: 2500ms;
     animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;  
-  animation-delay: 1750ms;
-
+    animation-timing-function: ease-in-out;
+    animation-delay: 800ms;
 }
 h2 {
     margin-left: 10%;
@@ -69,7 +94,7 @@ p1  {
     
   font-size: 160%;
      animation-name: WordComeUp_anim;
-      animation-duration: 4250ms;
+      animation-duration: 2000ms;
     z-index: 2;
 
     animation-timing-function:ease-in-out;  
@@ -77,23 +102,14 @@ p1  {
 p  {
   color: dimgray;
   font-family: courier;
-    margin-left: 20px;
   font-size: 200%;
-     animation-name: WordComeUp_anim;
-      animation-duration: 4250ms;
+  animation-name: WordComeUp_anim;
+  animation-duration: 2000ms;
     z-index: 2;
 
     animation-timing-function:ease-in-out;  
 }
 
-.textDiv{
-    padding-top: 180px;
-  
-}
-.smallicon{
-    margin:3%;
- 
-}
 .important{
     font-weight: bold;
 }
@@ -126,11 +142,7 @@ background:#1f2022;
         right:5%;
     position:fixed;
     text-align: right;
-    display:flex;
-     z-index: -2;
-   
-     
-    
+    display:flex;   
 }
 
 
@@ -158,41 +170,80 @@ p{
   
         }
 }
-   
 
 
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-    
-}
-@keyframes WordComeUp_anim{
-    0% {opacity: 0%;}
-    
-    80% {opacity: 0%;}
-    100%{opacity:100%;}
-}
-@keyframes Title_anim {
-  0%   {color:#1f2022;}
-  6%  {color:#444444;}
-30%  {color:#1f2022;}
-    34%  {color: #666666; }
-    58%  {color:#1f2022; }
-    62%  {color:#444444; }
-        86%  {color:#1f2022; }
-        100%  {color:#1f2022; }
-}
-@keyframes Background_anim {
- 0%   {background-color:#1f2022; 
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
     }
-     60%   {color:#1f2022; 
+
+    @keyframes WordComeUp_anim {
+        0% {
+            opacity: 0%;
+        }
+
+        80% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
     }
-75%  {background-color:#444444; }
-  100% {background-color:#1f2022; }
 
+    @keyframes Title_anim {
+        0% {
+            color: #1f2022;
+        }
 
-}
+        6% {
+            color: #444444;
+        }
+
+        30% {
+            color: #1f2022;
+        }
+
+        34% {
+            color: #666666;
+        }
+
+        58% {
+            color: #1f2022;
+        }
+
+        62% {
+            color: #444444;
+        }
+
+        86% {
+            color: #1f2022;
+        }
+
+        100% {
+            color: #1f2022;
+        }
+    }
+
+    @keyframes Background_anim {
+        0% {
+            background-color: #1f2022;
+        }
+
+        50% {
+            color: #1f2022;
+        }
+
+        65% {
+            background-color: #444444;
+        }
+
+        100% {
+            background-color: #1f2022;
+        }
+    }
