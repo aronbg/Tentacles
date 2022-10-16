@@ -13,8 +13,6 @@
       z-index: -2;
       height: 100%
       position: inherit;
-
-      
   }
 
 .ImageButton {
@@ -27,148 +25,173 @@
         transform: scale(1.1);
     }
 
-.formbox {
-    padding-top: 200px;
-    display: flex;
-    color: white;
-    font-size: 32px;
+.LogoImage {
+    margin: inherit;
 }
 
-input[type="text"]{
-    background-color:gray;
-    width:200px;
-    height:200px;
+.MobileText {
+    margin: inherit;
 }
 
-input[type="submit"]{
-    background-color: gray;
+@media (max-width: 1000px) {
+    .MobileText {
+        margin:auto;
+    }
+    .LogoImage {
+        margin: auto;
+    }
+
+    .ImageButton{
+        max-width:100%;
+        margin:5px;
+    }
 }
 
-h1 {
-    color: #1f2022;
-    font-family: 'Russo One', sans-serif;
-    font-weight: bold;
-    font-size: 1200%;
-    letter-spacing: -12px;
-    z-index: -1;
-    margin: 0px;
-    margin-top: 64px;
-    animation-name: Title_anim;
-    animation-duration: 2500ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-delay: 800ms;
-}
-h2 {
-    margin-left: 10%;
-    
-  color: dimgray;
-   font-family: 'Russo   One', sans-serif;
-    font-weight: bold;
-  font-size: 400%;
-    letter-spacing: -3px;
-    z-index: 0;
-    
 
-   animation-name: WordComeUp_anim;
-      animation-duration: 4250ms;
-    z-index: 2;
-    
 
+    .formbox {
+        padding-top: 200px;
+        display: flex;
+        color: white;
+        font-size: 32px;
+    }
+
+    input[type="text"] {
+        background-color: gray;
+        width: 200px;
+        height: 200px;
+    }
+
+    input[type="submit"] {
+        background-color: gray;
+    }
+
+    h1 {
+        color: #1f2022;
+        font-family: 'Russo One', sans-serif;
+        font-weight: bold;
+        font-size: 1200%;
+        letter-spacing: -12px;
+        z-index: -1;
+        margin: 0px;
+        margin-top: 64px;
+        animation-name: Title_anim;
+        animation-duration: 2500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 800ms;
+    }
+
+    h2 {
+        margin-left: 10%;
+        color: dimgray;
+        font-family: 'Russo   One', sans-serif;
+        font-weight: bold;
+        font-size: 400%;
+        letter-spacing: -3px;
+        z-index: 0;
+        animation-name: WordComeUp_anim;
+        animation-duration: 4250ms;
+        z-index: 2;
         text-align: center;
-    width:20%;
-    display: flex;
-    
-    flex-wrap: wrap;
-    border: 10px;
-    border-style: double;
-    border-color: dimgray;
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        border: 10px;
+        border-style: double;
+        border-color: dimgray;
+        animation-timing-function: ease-in-out;
+    }
 
-    animation-timing-function:ease-in-out;  
+    p1 {
+        color: dimgray;
+        font-family: courier;
+        right: 200px;
+        font-size: 160%;
+        animation-name: WordComeUp_anim;
+        animation-duration: 2000ms;
+        z-index: 2;
+        animation-timing-function: ease-in-out;
+    }
 
-}
-p1  {
-  color: dimgray;
-  font-family: courier;
-   right: 200px;
-    
-  font-size: 160%;
-     animation-name: WordComeUp_anim;
-      animation-duration: 2000ms;
-    z-index: 2;
+    p {
+        color: dimgray;
+        font-family: courier;
+        font-size: 200%;
+        animation-name: WordComeUp_anim;
+        animation-duration: 2000ms;
+        z-index: 2;
+        animation-timing-function: ease-in-out;
+    }
 
-    animation-timing-function:ease-in-out;  
-}
-p  {
-  color: dimgray;
-  font-family: courier;
-  font-size: 200%;
-  animation-name: WordComeUp_anim;
-  animation-duration: 2000ms;
-    z-index: 2;
-
-    animation-timing-function:ease-in-out;  
-}
-
-.important{
-    font-weight: bold;
-}
+    .important {
+        font-weight: bold;
+    }
 
 
 
-.date{
-    font-weight: bold;
-    word-spacing: 20px;
-    font-size: 300%;
-}
-body {
-background:#1f2022;
-    padding: none;
-    margin: none;
-          z-index: -2;
- animation-name: Background_anim;
-  animation-duration: 1500ms;
-  
-}
-.kiekje{transition: 3s ease;display:inline-block; }
-.photobubble{align-items: center;}
-.container{
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.rightbox{
-    top:-80px;
-        right:5%;
-    position:fixed;
-    text-align: right;
-    display:flex;   
-}
+    .date {
+        font-weight: bold;
+        word-spacing: 20px;
+        font-size: 300%;
+    }
+
+    body {
+        background: #1f2022;
+        padding: none;
+        margin: none;
+        z-index: -2;
+        animation-name: Background_anim;
+        animation-duration: 1500ms;
+    }
+
+    .kiekje {
+        transition: 3s ease;
+        display: inline-block;
+    }
+
+    .photobubble {
+        align-items: center;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .rightbox {
+        top: -80px;
+        right: 5%;
+        position: fixed;
+        text-align: right;
+        display: flex;
+    }
 
 
     @media only screen and (max-width: 1000px) {
-        h1{
-            display:flex;
-            position:static;
+        h1 {
+            display: flex;
+            position: static;
         }
-        h2{
-          font-size: 800%;  
+
+        h2 {
+            font-size: 800%;
             width: 60%
-               
         }
-p{
-       
-        font-size: 340%;
-    }
-        p1{
-       
-        font-size: 200%;
-    }
-        #div{
+
+        p {
+            font-size: 340%;
+        }
+
+        p1 {
+            font-size: 200%;
+        }
+
+        #div {
             max-width: 100%;
         }
-  
-        }
+    }
 }
 
 
