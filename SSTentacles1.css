@@ -1,6 +1,4 @@
- 
- 
-  #div{
+#div{
    background : url('https://studenthome.hku.nl/~aron.bockting/projects/CarWash/PngTentacleV5.png') no-repeat;
    background-size : cover;
       
@@ -13,7 +11,7 @@
       z-index: -2;
       height: 100%
       position: inherit;
-  }
+}
 
 .ImageButton {
     max-width: 100%;
@@ -21,9 +19,9 @@
     transition: transform .2s;
 }
 
-    .ImageButton:hover {
-        transform: scale(1.1);
-    }
+.ImageButton:hover {
+    transform: scale(1.1);
+}
 
 .LogoImage {
     margin: inherit;
@@ -32,18 +30,39 @@
 .MobileText {
     margin: inherit;
 }
+.href_homebutton{
+    position:fixed;
+}
 
+.blankspace {
+    max-width: 3%;
+}
 @media (max-width: 1000px) {
     .MobileText {
-        margin:auto;
+        margin: auto;
+        text-align: center;
     }
+
     .LogoImage {
         margin: auto;
     }
 
-    .ImageButton{
-        max-width:100%;
-        margin:5px;
+    .ImageButton {
+        max-width: 100%;
+        margin: auto;
+    }
+
+.href_homebutton{
+    right:10%;
+}
+
+    .imageImage {
+        width: 700px;
+        height: auto;
+    }
+
+    .blankspace {
+        max-width: 0%;
     }
 }
 
@@ -160,50 +179,39 @@
         color: white;
     }
 
-    .rightbox {
-        top: -80px;
-        right: 5%;
-        position: fixed;
-        text-align: right;
+
+@media only screen and (max-width: 1000px) {
+    h1 {
         display: flex;
+        position: static;
     }
 
+    h2 {
+        font-size: 800%;
+        width: 60%
+    }
 
-    @media only screen and (max-width: 1000px) {
-        h1 {
-            display: flex;
-            position: static;
-        }
+    p {
+        font-size: 340%;
+    }
 
-        h2 {
-            font-size: 800%;
-            width: 60%
-        }
+    p1 {
+        font-size: 200%;
+    }
 
-        p {
-            font-size: 340%;
-        }
-
-        p1 {
-            font-size: 200%;
-        }
-
-        #div {
-            max-width: 100%;
-        }
+    #div {
+        max-width: 100%;
     }
 }
 
-
-
-    .icon {
+.icon{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
-    }
+}
 
     @keyframes WordComeUp_anim {
         0% {
