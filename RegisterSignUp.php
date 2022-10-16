@@ -8,7 +8,7 @@ $name = $_POST["name"];
 
 
 //$query = "SELECT * FROM users WHERE email = '$email' AND Wachtwoord = '$password'";
-$query = "INSERT INTO users(id, name, email) VALUES (NULL, '$name','$email')";
+$query = "INSERT INTO TentaclesList(id, name, email) VALUES (NULL, '$name','$email')";
 
 if (!($result = $mysqli->query($query)))
 showerror($mysqli->errno,$mysqli->error);
