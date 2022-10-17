@@ -13,6 +13,8 @@ $query = "INSERT INTO TentaclesList(id, name, email) VALUES (NULL, '$name','$ema
 if (!($result = $mysqli->query($query)))
 showerror($mysqli->errno,$mysqli->error);
 
+$row = $result->fetch_assoc();
+
 //echo json_encode($row["name"]) . json_encode["email"];
 
 ?>
