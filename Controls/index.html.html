@@ -1,0 +1,33 @@
+       <!DOCTYPE HTML>
+<HTML>
+    
+    <body>
+        
+        <script>
+            function submitForm() {
+            // Can do some validation here if needed
+            document.getElementById('deviceId').submit();  
+            return true;
+            }
+        </script>
+
+
+        <h1>Control Center</h1>
+        <div class="uibutton">
+            
+            <form method="POST" action="RequestValues.php" id="deviceId">
+                <!-- form bits here -->
+                 <label for="did">did</label><br />
+                <input type="text" id="did" name="did" /><br />
+                <!-- i want the deviceId... or did's value to be 0 when clicking the first image and 1 when clicking the second image 
+                i dont understand enough of javascript to do the validation. at least i think youll do that by sending it to the javascript.-->
+                
+                
+            </form>
+            
+            <a href="javascript:void(0);" onclick="submitForm();"><img src ="lanternimg.png"></a>
+        
+        </div>
+    </body>
+</HTML>
+    
